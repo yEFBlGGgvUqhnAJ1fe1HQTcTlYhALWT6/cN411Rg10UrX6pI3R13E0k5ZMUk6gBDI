@@ -3,6 +3,16 @@
 #include <iostream>
 #include <random>
 
+void doSomething()
+{
+    int j = 40;
+    for (int i=0; i<j; ++i)
+    {
+        j /= 2;
+    }
+    std::cout << "j = " << j << std::endl;
+}
+
 auto setupExperiment()
 {
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
